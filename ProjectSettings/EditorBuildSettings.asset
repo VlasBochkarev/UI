@@ -8,13 +8,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
-    path: Assets/Scenes/YouTube.unity
-    guid: 0b2ab0debe86946aca517ac119563890
-  - enabled: 1
-    path: Assets/Scenes/Telegram.unity
-    guid: 96684a7d7f55448eab3acaf506227b06
-  - enabled: 1
-    path: Assets/Scenes/Instagram.unity
-    guid: f304173650bf54a6489b6103354e92b3
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}
