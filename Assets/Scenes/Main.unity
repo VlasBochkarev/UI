@@ -1465,6 +1465,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 60095500}
+  - component: {fileID: 60095501}
   m_Layer: 5
   m_Name: Content
   m_TagString: Untagged
@@ -1495,6 +1496,27 @@ RectTransform:
   m_AnchoredPosition: {x: -0.0043945312, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.49999997, y: 0.5}
+--- !u!114 &60095501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60095499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1e4fa50517d14f7988abfe92e20cbdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Telegram: {fileID: 453190747}
+  Instagram: {fileID: 65634961}
+  YouTube: {fileID: 1066293360}
+  OpenYouTubePageButton: {fileID: 311674107}
+  OpenInstagramPageButton: {fileID: 964474008}
+  OpenTelegramPageButton: {fileID: 1244988848}
+  CloseYouTubePageButton: {fileID: 1276396145}
+  CloseInstagramPageButton: {fileID: 971475990}
+  CloseTelegramPageButton: {fileID: 1959781620}
 --- !u!1 &60955004
 GameObject:
   m_ObjectHideFlags: 0
@@ -4753,7 +4775,6 @@ GameObject:
   - component: {fileID: 311674106}
   - component: {fileID: 311674109}
   - component: {fileID: 311674107}
-  - component: {fileID: 311674108}
   m_Layer: 5
   m_Name: YouTube
   m_TagString: Untagged
@@ -4770,7 +4791,7 @@ RectTransform:
   m_GameObject: {fileID: 311674105}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 2, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1103847991}
   - {fileID: 1976581965}
@@ -4781,8 +4802,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0375, y: 0.074}
   m_AnchorMax: {x: 0.31625003, y: 0.8213308}
-  m_AnchoredPosition: {x: -1, y: -1.0468749}
-  m_SizeDelta: {x: -2, y: -187.95}
+  m_AnchoredPosition: {x: -1, y: 0}
+  m_SizeDelta: {x: -2, y: -0.000030518}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &311674107
 MonoBehaviour:
@@ -4828,21 +4849,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &311674108
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 311674105}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4160a4f20edc4c909e80195c758abb4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  youTube: {fileID: 1066293360}
-  btnYouTube: {fileID: 311674107}
-  back: {fileID: 1276396145}
 --- !u!222 &311674109
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8056,7 +8062,7 @@ RectTransform:
   m_GameObject: {fileID: 535390821}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 2, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 869678503}
   - {fileID: 1080848418}
@@ -8067,8 +8073,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.67875004, y: 0.074}
   m_AnchorMax: {x: 0.95375, y: 0.8213308}
-  m_AnchoredPosition: {x: -2.5, y: -1.0469972}
-  m_SizeDelta: {x: 1, y: -187.95}
+  m_AnchoredPosition: {x: -2.5, y: 0}
+  m_SizeDelta: {x: 1, y: 0.000030518}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &535390823
 MonoBehaviour:
@@ -8364,7 +8370,7 @@ RectTransform:
   m_GameObject: {fileID: 549368162}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 2, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 885826598}
   - {fileID: 1254157277}
@@ -8375,8 +8381,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0375, y: 0.074}
   m_AnchorMax: {x: 0.31625003, y: 0.8213308}
-  m_AnchoredPosition: {x: -1, y: -1.0469972}
-  m_SizeDelta: {x: -2, y: -187.95}
+  m_AnchoredPosition: {x: -1, y: 0}
+  m_SizeDelta: {x: -2, y: 0.000030518}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &549368164
 MonoBehaviour:
@@ -15782,7 +15788,6 @@ GameObject:
   - component: {fileID: 964474007}
   - component: {fileID: 964474009}
   - component: {fileID: 964474008}
-  - component: {fileID: 964474010}
   m_Layer: 5
   m_Name: Instagram
   m_TagString: Untagged
@@ -15799,7 +15804,7 @@ RectTransform:
   m_GameObject: {fileID: 964474006}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 2, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1462640550}
   - {fileID: 331072918}
@@ -15810,8 +15815,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.67875004, y: 0.074}
   m_AnchorMax: {x: 0.95375, y: 0.8213308}
-  m_AnchoredPosition: {x: -2.5, y: -1.0468749}
-  m_SizeDelta: {x: 1, y: -187.95}
+  m_AnchoredPosition: {x: -2.5, y: 0}
+  m_SizeDelta: {x: 1, y: -0.000030518}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &964474008
 MonoBehaviour:
@@ -15865,21 +15870,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 964474006}
   m_CullTransparentMesh: 1
---- !u!114 &964474010
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 964474006}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94b845cd4841b4bc7a11cec42697c259, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  instagram: {fileID: 65634961}
-  btnYouTube: {fileID: 964474008}
-  back: {fileID: 971475990}
 --- !u!1 &971475988
 GameObject:
   m_ObjectHideFlags: 0
@@ -20797,7 +20787,6 @@ GameObject:
   - component: {fileID: 1244988847}
   - component: {fileID: 1244988849}
   - component: {fileID: 1244988848}
-  - component: {fileID: 1244988850}
   m_Layer: 5
   m_Name: Telegram
   m_TagString: Untagged
@@ -20814,7 +20803,7 @@ RectTransform:
   m_GameObject: {fileID: 1244988846}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 2, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 456480195}
   - {fileID: 1628587643}
@@ -20825,8 +20814,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.36125, y: 0.074}
   m_AnchorMax: {x: 0.64000005, y: 0.8213308}
-  m_AnchoredPosition: {x: -1, y: -1.0468749}
-  m_SizeDelta: {x: -2, y: -187.95}
+  m_AnchoredPosition: {x: -1, y: 0}
+  m_SizeDelta: {x: -2, y: -0.000030518}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1244988848
 MonoBehaviour:
@@ -20880,21 +20869,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1244988846}
   m_CullTransparentMesh: 1
---- !u!114 &1244988850
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1244988846}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df0373f9acc1644479e87bc6c055b4ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  telegram: {fileID: 453190747}
-  btnYouTube: {fileID: 1244988848}
-  back: {fileID: 1959781620}
 --- !u!1 &1250542313
 GameObject:
   m_ObjectHideFlags: 0
@@ -27518,9 +27492,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c82d54edc40d74b1891be7c72378c81d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  showMenu: {fileID: 1577887018}
-  show: {fileID: 1616822275}
-  close: {fileID: 639095759}
+  ShowMenuPage: {fileID: 1577887018}
+  ShowMenuPageButton: {fileID: 1616822275}
+  CloseMenuPageButton: {fileID: 639095759}
 --- !u!1 &1592366179
 GameObject:
   m_ObjectHideFlags: 0
@@ -33899,7 +33873,7 @@ RectTransform:
   m_GameObject: {fileID: 1967870934}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 2, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 585378702}
   - {fileID: 32938551}
@@ -33910,8 +33884,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.36125, y: 0.074}
   m_AnchorMax: {x: 0.64000005, y: 0.8213308}
-  m_AnchoredPosition: {x: -1, y: -1.0469972}
-  m_SizeDelta: {x: -2, y: -187.95}
+  m_AnchoredPosition: {x: -1, y: 0}
+  m_SizeDelta: {x: -2, y: 0.000030518}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1967870936
 MonoBehaviour:

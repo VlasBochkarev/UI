@@ -3,31 +3,28 @@ using UnityEngine.UI;
 
 public class OpenMenu : MonoBehaviour
 {
-    public GameObject showMenu;
-    public Button show, close;
+    public GameObject ShowMenuPage;
+    public Button ShowMenuPageButton;
+    public Button CloseMenuPageButton;
 
-    private Animator animator;
-
-    void ShowMenu()
-    {
-        animator.SetBool("isShowMenu", true);
-    }
-    void CloseMenu()
-    {
-        animator.SetBool("isShowMenu", false);
-    }
-
-
+    private Animator MyAnimator;
+    private readonly int _showMenuHash = Animator.StringToHash("isShowMenu");
 
     private void Start()
     {
-        animator = GetComponent<Animator>();
-        Button btnShow = show.GetComponent<Button>();
-        Button btnClose = close.GetComponent<Button>();
-        btnShow.onClick.AddListener(ShowMenu);
-        btnClose.onClick.AddListener(CloseMenu);
+        MyAnimator = GetComponent<Animator>();
+        ShowMenuPageButton.onClick.AddListener(ShowMenu);
+        CloseMenuPageButton.onClick.AddListener(CloseMenu);
     }
 
+    private void ShowMenu()
+    {
+        MyAnimator.SetBool(_showMenuHash, true);
+    }
 
+    private void CloseMenu()
+    {
+        MyAnimator.SetBool("isShowMenu", false);
+    }
 }
 
